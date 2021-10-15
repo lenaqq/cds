@@ -1,4 +1,6 @@
 import * as React from "react"
+import { Link } from 'gatsby'
+import Layout from '../Components/layout'
 
 // styles
 const pageStyles = {
@@ -128,16 +130,23 @@ const links = [
 // markup
 const IndexPage = () => {
   return (
+
     <main style={pageStyles}>
+          <Layout pageTitle='Welcome' pageHeading='Home'>
+        This is the Home page.
+    </Layout>
       <title>Home Page</title>
       <h1 style={headingStyles}>
-        Congratulations
+        Congratulations !!!
         <br />
         <span style={headingAccentStyles}>— you just made a Gatsby site! </span>
         <span role="img" aria-label="Party popper emojis">
           🎉🎉🎉
         </span>
       </h1>
+
+      <Link to="/about">About
+      </Link>
       <p style={paragraphStyles}>
         Edit <code style={codeStyles}>src/pages/index.js</code> to see this page
         update in real-time.{" "}
@@ -180,5 +189,6 @@ const IndexPage = () => {
     </main>
   )
 }
+
 
 export default IndexPage
