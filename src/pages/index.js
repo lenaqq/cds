@@ -4,10 +4,6 @@ import Layout from '../Components/layout'
 
 import { StaticImage } from "gatsby-plugin-image"
 
-export function Dino() {
- return <StaticImage src="../images/test.png" alt="A test image" />
-}
-
 // styles
 const pageStyles = {
   color: "#232129",
@@ -138,12 +134,15 @@ const IndexPage = () => {
   return (
 
     <main style={pageStyles}>
-          <Layout pageTitle='Welcome' pageHeading='Home'>
+          <Layout pageTitle='Home' pageHeading='Welcome'>
         This is the Home page.
         <StaticImage
           src="https://cdn.dribbble.com/users/6183425/screenshots/14370113/media/948f742e5fe012c8881218d12fb06c7f.png"
           alt='Digital Image'
         />
+        <br/>
+        <br/>
+
         <StaticImage
           src="../images/wallpapersden.com_k-beautiful-landscape-digital-art_2560x1440.jpg"
           alt='Digital Image'
